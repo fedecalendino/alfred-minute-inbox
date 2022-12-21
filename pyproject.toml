@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "Minute Inbox"
+version = "0.1.0"
+description = "Get a disposable 10 minute email address"
+documentation = "https://github.com/fedecalendino/alfred-minute-inbox/blob/main/README.md"
+homepage = "https://github.com/fedecalendino/alfred-minute-inbox"
+license = "MIT"
+
+authors = [
+    "Fede Calendino <fede@calendino.com>"
+]
+
+[tool.poetry.dependencies]
+python = ">=3.8,<3.11"
+alfred-pyflow = "latest"
+minuteinbox = "0.2.0"
+beautifulsoup4 = "^4.11.1"
+
+[tool.poetry.dev-dependencies]
+black = "latest"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
