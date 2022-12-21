@@ -16,7 +16,7 @@ def main(workflow):
         arg=inbox.address,
         valid=True,
     ).set_icon_file(
-        path="./img/extend.png",
+        path="./img/icons/extend.png",
     )
 
 

@@ -1,6 +1,6 @@
 [[package]]
 name = "alfred-pyflow"
-version = "0.3.2"
+version = "0.3.3"
 description = "Minimal library for the development of Alfred Workflows."
 category = "main"
 optional = false
@@ -189,12 +189,12 @@ socks = ["PySocks (>=1.5.6,!=1.5.7,<2.0)"]
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8,<3.11"
-content-hash = "c4c979adbfd87ca01a43f4278e88cecab46e590c351d729016456d2b1a8c1f21"
+content-hash = "2f41f4c009b996ff859545f3c923db6a5ac5d6eebb3fef2dd51649a838398763"
 
 [metadata.files]
 alfred-pyflow = [
-    {file = "alfred-pyflow-0.3.2.tar.gz", hash = "sha256:a7dd82d1cef2dad7f0885362bb33f0a81b7374bce014f2fbc7c684290a633a40"},
-    {file = "alfred_pyflow-0.3.2-py3-none-any.whl", hash = "sha256:f2e33b0f0dff067f83492c85b5bddb046caf20d57e3ac58b78b5df8cc4dd7678"},
+    {file = "alfred-pyflow-0.3.3.tar.gz", hash = "sha256:ec9ed437183c6b6bc658af5f1b696f8a9904bc2ba80460e1bbd17aec86f17824"},
+    {file = "alfred_pyflow-0.3.3-py3-none-any.whl", hash = "sha256:479a1aed9dc6f9fa01f2f004cb9c4755ced4baae4b83ca8e122dab6429117322"},
 ]
 beautifulsoup4 = [
     {file = "beautifulsoup4-4.11.1-py3-none-any.whl", hash = "sha256:58d5c3d29f5a36ffeb94f02f0d786cd53014cf9b3b3951d42e0080d8a9498d30"},

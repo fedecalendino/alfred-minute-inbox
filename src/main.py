@@ -26,7 +26,7 @@ def main(workflow):
         arg=inbox.address,
         valid=True,
     ).set_icon_file(
-        path="./img/inbox.png",
+        path="./img/icons/inbox.png",
     )
 
     item.set_alt_mod(
@@ -54,7 +54,7 @@ def main(workflow):
             arg=path,
             valid=True,
         ).set_icon_file(
-            path="./img/new.png" if mail.is_new else "./img/envelope.png",
+            path="./img/icons/new.png" if mail.is_new else "./img/icons/envelope.png",
         )
 
 

@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "Minute Inbox"
-version = "0.1.0"
+version = "0.1.1"
 description = "Get a disposable 10 minute email address"
 documentation = "https://github.com/fedecalendino/alfred-minute-inbox/blob/main/README.md"
 homepage = "https://github.com/fedecalendino/alfred-minute-inbox"
@@ -12,7 +12,7 @@ authors = [
 
 [tool.poetry.dependencies]
 python = ">=3.8,<3.11"
-alfred-pyflow = "latest"
+alfred-pyflow = "0.3.3"
 minuteinbox = "0.2.0"
 beautifulsoup4 = "^4.11.1"
 
