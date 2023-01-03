@@ -8,10 +8,10 @@ import utils
 
 
 def main(workflow):
-    try:
-        inbox = utils.restore_inbox(workflow)
-        new = False
-    except Exception:
+    inbox = utils.restore_cached_inbox(workflow)
+    new = False
+
+    if not inbox:
         inbox = utils.new_inbox(workflow)
         new = True
 
@@ -29,14 +29,14 @@ def main(workflow):
         path="./img/icons/inbox.png",
     )
 
-    item.set_alt_mod(
-        arg="extend",
-        subtitle="extend expiration for 10 minutes",
-    )
-
     item.set_cmd_mod(
         arg="extend",
-        subtitle="extend expiration for 10 minutes",
+        subtitle="🔄 extend expiration for 10 minutes",
+    )
+
+    item.set_alt_mod(
+        arg="destroy",
+        subtitle="🔥 destroy this inbox",
     )
 
     for mail in inbox.mails:

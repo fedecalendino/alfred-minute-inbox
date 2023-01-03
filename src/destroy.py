@@ -1,5 +1,4 @@
 import sys
-from datetime import timedelta
 
 from pyflow import Workflow
 
@@ -12,15 +11,15 @@ def main(workflow):
     if not inbox:
         return
 
-    inbox.extend_10m()
+    inbox.delete()
+
+    utils.delete_cached_inbox(workflow)
 
     workflow.new_item(
-        title=f"{inbox.address} expires in {timedelta(seconds=inbox.expires_in)}",
-        subtitle="Added 10 minutes to expiration",
-        arg=inbox.address,
+        title=f"{inbox.address} has been destroyed",
         valid=True,
     ).set_icon_file(
-        path="./img/icons/extend.png",
+        path="./img/icons/destroy.png",
     )
 
 

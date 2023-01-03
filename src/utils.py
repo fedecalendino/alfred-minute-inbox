@@ -1,13 +1,17 @@
 import json
+import os
 
 from minuteinbox import Inbox
 
 
-def restore_inbox(workflow):
-    path = f"{workflow.cache.cachedir}/cache.json"
+def restore_cached_inbox(workflow):
+    try:
+        path = f"{workflow.cache.cachedir}/cache.json"
 
-    with open(path) as file:
-        cache = json.loads(file.read())
+        with open(path) as file:
+            cache = json.loads(file.read())
+    except FileNotFoundError:
+        return None
 
     address = cache["address"]
     token = cache["token"]
@@ -20,6 +24,11 @@ def restore_inbox(workflow):
     _ = inbox.expires_in
 
     return inbox
+
+
+def delete_cached_inbox(workflow):
+    path = f"{workflow.cache.cachedir}/cache.json"
+    os.remove(path)
 
 
 def new_inbox(workflow):

@@ -4,8 +4,6 @@
 <dict>
 	<key>bundleid</key>
 	<string>com.github.fedecalendino.alfred-minute-inbox</string>
-	<key>category</key>
-	<string>Internet</string>
 	<key>connections</key>
 	<dict>
 		<key>69F6C12B-E9DB-49D4-B60F-929DA6F2067B</key>
@@ -44,6 +42,18 @@
 				<string></string>
 				<key>sourceoutputuid</key>
 				<string>50ECDE9F-D869-4876-85A3-16F0418D2F03</string>
+				<key>vitoclose</key>
+				<false/>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>A8377D0C-FEE8-4B66-9DA0-52D62EDA31A7</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+				<key>sourceoutputuid</key>
+				<string>CE030EE9-448F-4DE1-B55D-950CC856EF99</string>
 				<key>vitoclose</key>
 				<false/>
 			</dict>
@@ -102,55 +112,6 @@
 			<string>BD9F4402-D7FA-439B-8A97-92E9227B0939</string>
 			<key>version</key>
 			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>alfredfiltersresults</key>
-				<false/>
-				<key>alfredfiltersresultsmatchmode</key>
-				<integer>0</integer>
-				<key>argumenttreatemptyqueryasnil</key>
-				<false/>
-				<key>argumenttrimmode</key>
-				<integer>0</integer>
-				<key>argumenttype</key>
-				<integer>1</integer>
-				<key>escaping</key>
-				<integer>102</integer>
-				<key>keyword</key>
-				<string>{var:keyword}</string>
-				<key>queuedelaycustom</key>
-				<integer>3</integer>
-				<key>queuedelayimmediatelyinitially</key>
-				<false/>
-				<key>queuedelaymode</key>
-				<integer>0</integer>
-				<key>queuemode</key>
-				<integer>2</integer>
-				<key>runningsubtext</key>
-				<string>Fetching your disposable email address...</string>
-				<key>script</key>
-				<string>/usr/bin/python3 ./dist/main.py $@</string>
-				<key>scriptargtype</key>
-				<integer>1</integer>
-				<key>scriptfile</key>
-				<string></string>
-				<key>subtext</key>
-				<string></string>
-				<key>title</key>
-				<string>Get a disposable email address</string>
-				<key>type</key>
-				<integer>0</integer>
-				<key>withspace</key>
-				<false/>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.input.scriptfilter</string>
-			<key>uid</key>
-			<string>D25A8119-B2C1-4612-B2CC-4BDAD8FBFFB8</string>
-			<key>version</key>
-			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -251,6 +212,20 @@
 						<key>uid</key>
 						<string>50ECDE9F-D869-4876-85A3-16F0418D2F03</string>
 					</dict>
+					<dict>
+						<key>inputstring</key>
+						<string>{query}</string>
+						<key>matchcasesensitive</key>
+						<false/>
+						<key>matchmode</key>
+						<integer>0</integer>
+						<key>matchstring</key>
+						<string>destroy</string>
+						<key>outputlabel</key>
+						<string>destroy</string>
+						<key>uid</key>
+						<string>CE030EE9-448F-4DE1-B55D-950CC856EF99</string>
+					</dict>
 				</array>
 				<key>elselabel</key>
 				<string>address</string>
@@ -263,6 +238,102 @@
 			<string>91D3FF51-7494-412B-B6C4-22106E42D64F</string>
 			<key>version</key>
 			<integer>1</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>keyword</key>
+				<string>{var:keyword}</string>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string>Fetching your disposable email address...</string>
+				<key>script</key>
+				<string>/usr/bin/python3 ./dist/main.py $@</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string>Get a disposable email address</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>D25A8119-B2C1-4612-B2CC-4BDAD8FBFFB8</string>
+			<key>version</key>
+			<integer>3</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>alfredfiltersresults</key>
+				<false/>
+				<key>alfredfiltersresultsmatchmode</key>
+				<integer>0</integer>
+				<key>argumenttreatemptyqueryasnil</key>
+				<false/>
+				<key>argumenttrimmode</key>
+				<integer>0</integer>
+				<key>argumenttype</key>
+				<integer>1</integer>
+				<key>escaping</key>
+				<integer>102</integer>
+				<key>queuedelaycustom</key>
+				<integer>3</integer>
+				<key>queuedelayimmediatelyinitially</key>
+				<false/>
+				<key>queuedelaymode</key>
+				<integer>0</integer>
+				<key>queuemode</key>
+				<integer>2</integer>
+				<key>runningsubtext</key>
+				<string></string>
+				<key>script</key>
+				<string>/usr/bin/python3 ./dist/destroy.py $@</string>
+				<key>scriptargtype</key>
+				<integer>1</integer>
+				<key>scriptfile</key>
+				<string></string>
+				<key>subtext</key>
+				<string></string>
+				<key>title</key>
+				<string></string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<false/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>A8377D0C-FEE8-4B66-9DA0-52D62EDA31A7</string>
+			<key>version</key>
+			<integer>3</integer>
 		</dict>
 		<dict>
 			<key>config</key>
@@ -291,44 +362,51 @@
 		<key>158A181B-7322-442D-8A29-EE48C2F68CE9</key>
 		<dict>
 			<key>xpos</key>
-			<real>415</real>
+			<real>410</real>
 			<key>ypos</key>
-			<real>260</real>
+			<real>405</real>
 		</dict>
 		<key>69F6C12B-E9DB-49D4-B60F-929DA6F2067B</key>
 		<dict>
 			<key>xpos</key>
 			<real>410</real>
 			<key>ypos</key>
-			<real>150</real>
+			<real>185</real>
 		</dict>
 		<key>91D3FF51-7494-412B-B6C4-22106E42D64F</key>
 		<dict>
 			<key>xpos</key>
-			<real>250</real>
+			<real>265</real>
 			<key>ypos</key>
-			<real>155</real>
+			<real>230</real>
 		</dict>
 		<key>A33AFDB6-9BCF-41A9-901A-29919A87E5E2</key>
 		<dict>
 			<key>xpos</key>
-			<real>660</real>
+			<real>635</real>
 			<key>ypos</key>
-			<real>150</real>
+			<real>185</real>
+		</dict>
+		<key>A8377D0C-FEE8-4B66-9DA0-52D62EDA31A7</key>
+		<dict>
+			<key>xpos</key>
+			<real>410</real>
+			<key>ypos</key>
+			<real>295</real>
 		</dict>
 		<key>BD9F4402-D7FA-439B-8A97-92E9227B0939</key>
 		<dict>
 			<key>xpos</key>
 			<real>410</real>
 			<key>ypos</key>
-			<real>40</real>
+			<real>75</real>
 		</dict>
 		<key>D25A8119-B2C1-4612-B2CC-4BDAD8FBFFB8</key>
 		<dict>
 			<key>xpos</key>
 			<real>30</real>
 			<key>ypos</key>
-			<real>150</real>
+			<real>240</real>
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
