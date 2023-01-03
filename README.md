@@ -14,9 +14,12 @@ Fully working disposable email address using minuteinbox.com's api.
 
 
 * Press `enter` on the first item (📨) to copy the email address into your clipboard.
-  * Press `command + enter` or `option + enter` to extend the expiration by 10 minutes.
+  * Press `command + enter` to extend the expiration by 10 minutes.
+  * Press `option + enter` to destroy the current inbox.
+
 
 ![extend](screenshots/extend.png)
+![destroy](screenshots/destroy.png)
 
 
 * Press `enter` on any of the emails (✉️) to open a local copy of its contents in your browser.

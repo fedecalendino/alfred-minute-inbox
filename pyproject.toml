@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "Minute Inbox"
-version = "0.1.2"
+version = "0.2.0"
 description = "Get a disposable 10 minute email address"
 documentation = "https://github.com/fedecalendino/alfred-minute-inbox/blob/main/README.md"
 homepage = "https://github.com/fedecalendino/alfred-minute-inbox"
