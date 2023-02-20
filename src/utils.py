@@ -21,9 +21,12 @@ def restore_cached_inbox(workflow):
         token=token,
     )
 
-    _ = inbox.expires_in
-
-    return inbox
+    try:
+        _ = inbox.expires_in
+        return inbox
+    except ValueError as exc:
+        delete_cached_inbox(workflow)
+        raise exc
 
 
 def delete_cached_inbox(workflow):
