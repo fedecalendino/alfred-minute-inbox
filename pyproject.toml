@@ -16,11 +16,12 @@ minuteinbox = "0.3.0"
 beautifulsoup4 = "^4.11.1"
 alfred-pyflow = "^0.4.5"
 
-[tool.poetry.dev-dependencies]
-black = "^22.12.0"
+
 
 [tool.poetry.group.dev.dependencies]
 black = "^23.3.0"
+coverage = "^7.2.5"
+ddt = "^1.6.0"
 
 [build-system]
 requires = ["poetry-core>=1.0.0"]
