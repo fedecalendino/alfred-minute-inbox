@@ -11,3 +11,4 @@ class TestWorkflow(WorklowTestCase):
 
         workflow = self.workflow(**envs)
         feedback = self.run_workflow(workflow, main, *args)
+
